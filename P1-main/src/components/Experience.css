@@ -1,0 +1,137 @@
+.experience-section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.experience-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #3498db;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.experience-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.experience-item::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #3498db;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.experience-item:nth-child(odd) {
+  left: 0;
+}
+
+.experience-item:nth-child(even) {
+  left: 50%;
+}
+
+.experience-item:nth-child(even)::after {
+  left: -16px;
+}
+
+.experience-content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.company {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.position {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgb(111, 16, 111);
+}
+
+.duration {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.responsibilities {
+  padding-left: 20px;
+}
+
+.responsibilities li {
+  margin-bottom: 10px;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .experience-timeline::after {
+    left: 31px;
+  }
+  
+  .experience-item {
+    width: 100%;
+    padding-left: 20px; /* Adjusted padding */
+    padding-right: 25px;
+  }
+
+  .experience-item::after {
+    left: 5px; /* Adjusted position */
+    top: 10px; /* Adjusted position */
+    right: unset; /* Adjusted position */
+  }
+
+  .experience-item:nth-child(even) {
+    left: 0%;
+  }
+
+  .experience-content {
+    padding: 20px 15px; /* Adjust padding */
+  }
+}
+
+.lor-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.lor-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
